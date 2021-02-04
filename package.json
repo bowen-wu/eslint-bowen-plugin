@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-bowen-lint",
-    "version": "0.0.16",
+    "version": "0.0.21",
     "description": "eslint bowen plugin",
     "keywords": [
         "eslint",
@@ -13,11 +13,11 @@
         "test": "mocha tests --recursive"
     },
     "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.14.2",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-plugin-prettier": "^3.3.1",
-        "@typescript-eslint/eslint-plugin": "^4.14.2",
-        "eslint-plugin-vue": "^7.5.0",
-        "eslint-plugin-react": "^7.22.0"
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-vue": "^7.5.0"
     },
     "devDependencies": {
         "@typescript-eslint/parser": "^4.14.2",
