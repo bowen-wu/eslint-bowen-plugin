@@ -2,15 +2,15 @@
  * @fileoverview eslint plugin demo
  * @author bowen-wu
  */
-"use strict";
+'use strict';
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/bowen-lint"),
+var rule = require('../../../lib/rules/bowen-lint'),
 
-    RuleTester = require("eslint").RuleTester;
+    RuleTester = require('eslint').RuleTester;
 
 
 //------------------------------------------------------------------------------
@@ -18,19 +18,14 @@ var rule = require("../../../lib/rules/bowen-lint"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run("bowen-lint", rule, {
-
-    valid: [
-
-        // give me some code that won't trigger a warning
-    ],
-
+ruleTester.run('bowen-lint', rule, {
+    valid: [],
     invalid: [
         {
-            code: "individual lint",
+            code: 'individual lint',
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: 'Fill me in.',
+                type: 'Me too'
             }]
         }
     ]

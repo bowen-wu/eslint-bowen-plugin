@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-bowen-lint",
-    "version": "0.0.23",
+    "version": "0.1.0",
     "description": "eslint bowen plugin",
     "keywords": [
         "eslint",
