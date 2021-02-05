@@ -1,6 +1,6 @@
 # eslint-plugin-bowen-lint
 
-eslint plugin demo
+provide config 
 
 ## Installation
 
@@ -8,43 +8,44 @@ You'll first need to install [ESLint](http://eslint.org):
 
 ```
 $ npm i eslint --save-dev
+
+// yarn
+$ yarn add eslint -D
 ```
 
 Next, install `eslint-plugin-bowen-lint`:
 
 ```
 $ npm install eslint-plugin-bowen-lint --save-dev
+
+// yarn
+$ yarn add eslint-plugin-bowen-lint -D
 ```
 
 
 ## Usage
 
-Add `bowen-lint` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `bowen-lint` to the extends section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
-        "bowen-lint"
+    "extends": [
+        "plugin:bowen-lint/reactLint"
     ]
 }
 ```
 
+## Necessary Config 
 
-Then configure the rules you want to use under the rules section.
+* eslint-config-airbnb
 
-```json
-{
-    "rules": {
-        "bowen-lint/rule-name": 2
-    }
-}
-```
+## Necessary Plugin
 
-## Supported Rules
+* eslint-plugin-import
 
-* Fill in provided rules here
+## Supported Config 
 
-
-
-
-
+* plugin:bowen-lint/reactLint
+* plugin:bowen-lint/vueLint
+* plugin:bowen-lint/tsLint
+* plugin:bowen-lint/prettierLint
